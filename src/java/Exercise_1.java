@@ -12,11 +12,13 @@ public class Exercise_1 {
         float marks3= scan.nextFloat();
         float marks4= scan.nextFloat();
         float marks5= scan.nextFloat();
-
+        scan.nextLine();
+        System.out.println("Enter Student Name:");
+        String name= scan.nextLine();
         float TotalMarksObtained= marks1+marks2+marks3+marks4+marks5;
         float MaxMarks=500;
         float percent= (TotalMarksObtained/MaxMarks) *100;
-        System.out.println("Percentage Obtained by the student is :"+ percent);
+        System.out.println("Percentage Obtained by" + name + " is:"+ percent);
 
 
         System.out.println("Thank You!");
