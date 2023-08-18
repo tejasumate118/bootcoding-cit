@@ -30,7 +30,7 @@ public class MathOperations {
         //Modulus /Remainder
 
         float modulus=num1%num2;
-        System.out.println("Remainder of "+num1+" and "+num2+" is "+modulus);
+        System.out.println("Remainder of "+num1+" and "+num2+" is "+modulus+".");
 
 
 
