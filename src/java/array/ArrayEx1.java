@@ -11,7 +11,7 @@ public class ArrayEx1 {
         //Traverse array.
         for(int i=0;i<n;i++){
             if(arr[i]%2==0)//Only print Even Numbers.
-            System.out.print(arr[i] + " ");
+            System.out.print(arr[i] + ",");
         }
     }
 }
