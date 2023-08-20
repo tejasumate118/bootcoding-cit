@@ -11,7 +11,7 @@ public class ValidParantheses {
 
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Type parantheses to validiate");
+        System.out.println("Type parentheses to validiate");
         String s = sc.nextLine();
         ValidParantheses validator = new ValidParantheses();
 
