@@ -7,35 +7,42 @@ public class MathOperations {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the First Number: ");
-        float num1=scan.nextFloat();
+        double num1=scan.nextFloat();
         System.out.println("Enter the Second Number: ");
-        float num2=scan.nextFloat();
+        double num2=scan.nextFloat();
+        scan.close();
 
         //Addition
-        float sum=num1+num2;
-        System.out.println("Addition of "+num1+" and "+num2+" is "+sum);
+        Addition sum=new Addition();
+        System.out.println("Addition is :" + sum.add(num1,num2));
 
         //Subtraction
-        float sub=num1-num2;
-        System.out.println("Subtraction of "+num1+" and "+num2+" is "+sub);
+        System.out.println("Subtraction is :"+ subtraction(num1,num2));
 
         //Multiplication
-        float mul=num1*num2;
-        System.out.println("Multiplication of "+num1+" and "+num2+" is "+mul);
+        System.out.println("Multiplication of "+num1+" and "+num2+" is "+multiplication(num1,num2));
 
         //Division
-        float div=num1/num2;
-        System.out.println("Division of "+num1+" and "+num2+" is "+div);
+        System.out.println("Division of "+num1+" and "+num2+" is "+division(num1,num2));
 
         //Modulus /Remainder
-
-        float modulus=num1%num2;
+        double modulus=num1%num2;
         System.out.println("Remainder of "+num1+" and "+num2+" is "+modulus);
-
-
-
-
-
-
     }
-}
+    private static double subtraction(double x,double y){
+        return x-y;
+        }
+
+    private static double multiplication(double x,double y){
+        return x*y;
+    }
+    private static double division(double x,double y){
+        return x/y;
+    }
+    }
+
+class Addition{
+    public double add(double num1,double num2){
+     return num1+num2;
+
+}}
