@@ -9,6 +9,7 @@ public class VolumeOfBox {
         height= sc.nextDouble();
         width= sc.nextDouble();
         length= sc.nextDouble();
+        sc.close();
         vol1.calculation(width,height,length);
 
 
